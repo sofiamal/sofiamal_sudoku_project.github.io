@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sudoku.css">
+    <title>Sudoku game</title>
+    
+</head>
+<body>
+    <h1 id="gameHeader">G👌👌d Luck!</h1>
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="result"></p>
+        <p id="difficult">difficult: </p>
+    </div>
+    <div id="gameAndBtn">
+    <div id ="game">
+    <div id="tableGame"></div>
+    <div id="number_bank">
+        <p id="blank"></p> 
+    </div>
+    </div> 
+    <div id="gameFinished" hidden>
+        <button onclick="backToLevelPage()" id="finishgame_btn">Choose level</button>
+    </div>
+    <div id="game_btns">
+        <button class="gamebtn" id="finBtn" onclick="checkdone()">Finish</button>
+        <button class="gamebtn" id="againBtn" onclick="ClearBoard()">Clear Board</button>
+    </div>
+</div>
+    
+</body>
+<script src="sudoku.js"></script>
+
+</html>

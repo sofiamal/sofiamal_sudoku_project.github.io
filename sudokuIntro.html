@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sudoku.css">
+    <title>Sudoku intro</title>
+</head>
+
+<body>
+    <div id=intro>
+        <h1>SUDOKU</h1>
+        <input type="text" placeholder="Enter user name" id="userName">
+        <input type="password" placeholder="Enter password" id="userPass">
+        <br>
+        <button onclick="enterLevels('abcd','1234')" id="introBtn">Enter</button>
+    </div>
+    <div id="introWarning" hidden>
+        <h4 id="warning">User name and/or password is not correct!</h4>
+        <button onclick="tryAgain()" id="warningBtn">Try again</button>
+    </div>
+    <script src="sudokupregame.js"></script>
+</body>
+</html>
